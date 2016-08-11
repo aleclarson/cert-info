@@ -1,6 +1,6 @@
 {
   "name": "certpem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read basic info (subject, altnames, expiresAt, issuedAt) from a cert.pem / x509 certificate (tls / ssl / https) ",
   "main": "index.js",
   "bin": {
