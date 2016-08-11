@@ -17,6 +17,9 @@ npm install --save certpem
 Usage
 =====
 
+CLI
+---
+
 For basic info (subject, altnames, issuedAt, expiresAt):
 
 ```bash
@@ -24,6 +27,9 @@ certpem /path/to/cert.pem
 ```
 
 Output all info by passing `--debug` or use `--json` to see the basic info pretty-printed.
+
+node.js
+-------
 
 ```javascript
 'use strict';
@@ -50,3 +56,5 @@ var cert = fs.readFile('cert.pem', 'ascii', function (err, certstr) {
   "expiresAt": 1499731199000
 }
 ```
+
+With a few small changes this could also work in the browser (that's how its dependencies are designed).
