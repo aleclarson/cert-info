@@ -30,9 +30,13 @@ Output all info by passing `--debug` or use `--json` to see the basic info prett
 
 var certpem = require('certpem').certpem
 var cert = fs.readFile('cert.pem', 'ascii', function (err, certstr) {
-  console.info(cert.pem.info());
 
-  console.info(cert.pem.debug());
+  // basic info
+  console.info(certpem.info());
+
+  // way too much info
+  console.info(certpem.debug());
+
 });
 ```
 
