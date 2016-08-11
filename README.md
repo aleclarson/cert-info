@@ -38,13 +38,15 @@ var certpem = require('certpem').certpem
 var cert = fs.readFile('cert.pem', 'ascii', function (err, certstr) {
 
   // basic info
-  console.info(certpem.info());
+  console.info(certpem.info(certstr));
 
   // way too much info
-  console.info(certpem.debug());
+  console.info(certpem.debug(certstr));
 
 });
 ```
+
+Example output:
 
 ```javascript
 {
