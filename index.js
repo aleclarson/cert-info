@@ -3,8 +3,6 @@
 var certInfo = module.exports;
 module.exports.certpem = certInfo;
 
-require('buffer-v6-polyfill');
-
 // this is really memory expensive to do
 // (about half of a megabyte of loaded code)
 certInfo._pemToBinAb  = function (pem) {
