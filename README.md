@@ -1,39 +1,9 @@
-<!-- BANNER_TPL_BEGIN -->
 
-About Daplie: We're taking back the Internet!
---------------
-
-Down with Google, Apple, and Facebook!
-
-We're re-decentralizing the web and making it read-write again - one home cloud system at a time.
-
-Tired of serving the Empire? Come join the Rebel Alliance:
-
-<a href="mailto:jobs@daplie.com">jobs@daplie.com</a> | [Invest in Daplie on Wefunder](https://daplie.com/invest/) | [Pre-order Cloud](https://daplie.com/preorder/), The World's First Home Server for Everyone
-
-<!-- BANNER_TPL_END -->
-
-cert-info.js
-============
+# certpem
 
 Read basic info from a cert.pem / x509 certificate.
 
-Install
-=======
-
-```bash
-# bin
-npm install --global certpem
-
-# node.js library
-npm install --save certpem
-```
-
-Usage
-=====
-
-CLI
----
+### CLI
 
 For basic info (subject, altnames, issuedAt, expiresAt):
 
@@ -43,8 +13,7 @@ certpem /path/to/cert.pem
 
 Output all info by passing `--debug` or use `--json` to see the basic info pretty-printed.
 
-node.js
--------
+### Runtime API
 
 ```javascript
 'use strict';
